@@ -4,24 +4,40 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
-	<title>Parallax Template - Materialize</title>
+	<title>SMK FADILAH</title>
 
 	<!-- CSS  -->
 
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
 	<link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+	<link href="css/animate.css" type="text/css" rel="stylesheet" media="screen,projection" />
+	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+	<link rel="shortcut icon" href="http://sekolahfadilah.sch.id/wp-content/uploads/2016/10/Logo-Fadilah-Transfarent-copy.png" title="Favicon" />	
 
 	<style>
 		.navbar-fixed {
 			position: absolute;
 			z-index: 999999999;
 		}
-
+		
 	</style>
 	<script>
-
-
+		
+function animationClick(element, animation){
+    element = $(element);
+  element.hover(
+    function() {
+      element.addClass('animated ' + animation);
+    },
+    function(){
+      //wait for animation to finish before removing classes
+      window.setTimeout( function(){
+        element.removeClass('animated ' + animation);
+      }, 2000);
+    }
+  );
+}
 	</script>
 </head>
 
@@ -41,25 +57,27 @@
 		</div>
 	</nav>
 -->
+
 	<div class="navbar-fixed">
 		<nav class="transparent z-depth-0">
-			<div class="nav-wrapper">
+			<div class="nav-wrapper ">
 				<div class="row">
 					<div class="col s12">
-						<a href="#" data-activates="mobile-demo" class="button-collapse show-on-large white-text"><i class="material-icons">menu</i></a>
-						<img src="logo.png" style="width: 50px;height: 50px;margin-top:5px; " alt="Unsplashed background img 1"><a href="https://codepen.io/collection/nbBqgY/" class="brand-logo" target="_blank">&nbsp;&nbsp;SMK FADILAH</a>
+						<a href="#" data-activates="mobile-demo" class="button-collapse show-on-large"><i class="material-icons">menu</i></a>
+						<img src="logo.png" style="width: 50px;height: 50px;margin-top:5px; " alt="Unsplashed background img 1"><a href="https://codepen.io/collection/nbBqgY/" class="brand-logo white-text" target="_blank">&nbsp;&nbsp;SMK <span class="blue-text">FADILAH</span></a>
 						<ul class="right hide-on-med-and-down">
-							<li><a href="https://codepen.io/collection/nbBqgY/" target="_blank">TELP (021) 74863089</a></li>
-							<li><a href="https://codepen.io/collection/nbBqgY/" target="_blank">LOKASI</a></li>
-							<li><a href="https://codepen.io/collection/nbBqgY/" target="_blank">GALLERY</a></li>
+							<li><a href="javascript:void(0)" target="_blank" >PROFIL</a></li>
+							<li><a href="javascript:void(0)" target="_blank">LOKASI</a></li>
+							<li><a href="javascript:void(0)" target="_blank">GALLERY</a></li>
+							<li><a href="javascript:void(0)" target="_blank">TELP (021) 74863089</a></li>
 						</ul>
 					</div>
 				</div>
 				<ul class="side-nav" id="mobile-demo">
-					<li><a href="https://codepen.io/collection/nbBqgY/" target="_blank">Sass</a></li>
-					<li><a href="https://codepen.io/collection/nbBqgY/" target="_blank">Components</a></li>
-					<li><a href="https://codepen.io/collection/nbBqgY/" target="_blank">Javascript</a></li>
-					<li><a href="https://codepen.io/collection/nbBqgY/" target="_blank">Mobile</a></li>
+					<li><a href="javascript:void(0)" target="_blank" class="animated bounce">Sass</a></li>
+					<li><a href="javascript:void(0)" target="_blank">Components</a></li>
+					<li><a href="javascript:void(0)" target="_blank">Javascript</a></li>
+					<li><a href="javascript:void(0)" target="_blank">Mobile</a></li>
 				</ul>
 			</div>
 		</nav>
@@ -68,23 +86,46 @@
 
 
 
-	<div id="index-banner" class="parallax-container z-depth-3">
-		<div class="section no-pad-bot">
-			<div class="container">
-				<br><br>
-				<h1 class="header center teal-text light text-lighten-2">SMK FADILAH</h1>
-				<div class="row center">
-					<h5 class="header col s12">JL. Pendidikan II, Kelurahan Parigi Kec. Pondok Aren, Kota Tangerang Selatan Banten 15227</h5>
-				</div>
-				<div class="row center">
-					<a href="http://materializecss.com/getting-started.html" id="download-button" style="border: 1px solid white; border-radius: 3px;	" class="btn-large waves-effect waves-light transparent lighten-1">Mulai</a>
-				</div>
-				<br><br>
 
-			</div>
-		</div>
-		<div class="parallax"><img src="background1.jpg" alt="Unsplashed background img 1"></div>
+
+	<div class="slider">
+		<ul class="slides">
+
+			<li>
+				<img src="img/kegiatan/gedung-smk1.jpg">
+				<!-- random image -->
+				<div class="caption center-align">
+					<h3 class="light">WELCOME TO SMK FADILAH</h3>
+					<h5 class="light grey-text text-lighten-3">SMK FADILAH DO THE BEST</h5>
+				</div>
+			</li>
+			<li>
+				<img src="img/kegiatan/gedung-smk2.jpg">
+				<!-- random image -->
+				<div class="caption left-align">
+					<h3>ALAMAT KAMI</h3>
+					<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+				</div>
+			</li>
+			<li>
+				<img src="img/kegiatan/IMG_0546.JPG">
+				<!-- random image -->
+				<div class="caption right-align">
+					<h3>PENDIDIKAN YANG LEBIH BAIK</h3>
+					<h5 class="light grey-text text-lighten-3">DENGAN FASILITAS YANG MEMADAI</h5>
+				</div>
+			</li>
+			<li>
+				<img src="img/kegiatan/IMG_0737.JPG">
+				<!-- random image -->
+				<div class="caption center-align">
+					<h3 class="light">CERDAS DAN CERIA</h3>
+					<h5 class="light grey-text text-lighten-3"></h5>
+				</div>
+			</li>
+		</ul>
 	</div>
+
 
 
 	<div class="container">
@@ -138,12 +179,12 @@
 
 			<div class="row">
 				<div class="row center">
-					<h4 class="light">BANYAK PILIHAN JURUSAN</h4>
+					<h4 class="light">KOMPETENSI KEAHLIAN</h4>
 				</div>
 				<div class="col s12 m4">
 					<div class="icon-block">
 						<div class="row center">
-							<img src="img/jurusan/rpl.png" width="100px" height="100px">
+							<img src="img/jurusan/rpl.png" class="e" onmousemove="animationClick('.e','jackInTheBox')" width="100px" height="100px">
 						</div>
 						<div class="center">
 							<p class="light">REKAYASA PERANGKAT LUNAK</p>
@@ -153,7 +194,7 @@
 				<div class="col s12 m4">
 					<div class="icon-block">
 						<div class="row center">
-							<img src="img/jurusan/hotel.png" width="100px" height="100px">
+							<img src="img/jurusan/hotel.png" class="t" onmousemove="animationClick('.t','wobble')" on width="100px" height="100px">
 
 						</div>
 						<div class="center">
@@ -166,7 +207,7 @@
 				<div class="col s12 m4">
 					<div class="icon-block">
 						<div class="row center">
-							<img src="img/jurusan/tkj.png" width="100px" height="100px">
+							<img src="img/jurusan/tkj.png" class="z" onmousemove="animationClick('.z','wobble')" width="100px" height="100px">
 						</div>
 						<div class="center">
 							<p class="light">TEKNIK KOMPUTER JARINGAN</p>
@@ -176,7 +217,7 @@
 				<div class="col s12 m4">
 					<div class="icon-block">
 						<div class="row center">
-							<img src="img/jurusan/tkm.png" width="100px" height="100px">
+							<img src="img/jurusan/tkm.png" class="q" onmousemove="animationClick('.q','lightSpeedIn')" width="100px" height="100px">
 						</div>
 						<div class="center">
 							<p class="light">TEKNIK KENDARAAN MOTOR</p>
@@ -186,7 +227,7 @@
 				<div class="col s12 m4">
 					<div class="icon-block">
 						<div class="row center">
-							<img src="img/jurusan/tkr.png" width="100px" height="100px">
+							<img src="img/jurusan/tkr.png" class="p" onmousemove="animationClick('.p','rotateInDownLeft')" width="100px" height="100px">
 						</div>
 						<div class="center">
 							<p class="light">TEKNIK KENDARAAN RINGAN</p>
@@ -196,7 +237,7 @@
 				<div class="col s12 m4">
 					<div class="icon-block">
 						<div class="row center">
-							<img src="img/jurusan/mm.png" width="100px" height="100px">
+							<img src="img/jurusan/mm.png" class="l" onmousemove="animationClick('.l','hinge')" width="100px" height="100px">
 						</div>
 						<div class="center">
 							<p class="light">MULTIMEDIA</p>
@@ -206,20 +247,23 @@
 			</div>
 		</div>
 	</div>
+	<!--<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.849924451783!2d106.69284131406859!3d-6.283450663252082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fae9ed426cb3%3A0xd633605be781a330!2sSMK+Fadilah!5e0!3m2!1sid!2sid!4v1486714521273" width="400" height="300" frameborder="0" style="border:0" allowfullscreen></iframe> -->
 
 
-
-
-
-	<div class="parallax-container valign-wrapper">
+	<div class="parallax-container valign-wrapper" style="height: 500px">
 		<div class="section no-pad-bot">
 			<div class="container">
 				<div class="row center">
-					<h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
+					<h5 class="header col s12 light">
+						<blockquote>
+							Apakah kita semua menganggap bahwa Steve Jobs adalah pria hebat, meskipun kita tahu dia menghasilkan uang miliaran dengan memanfaatkan anak-anak ? Atau mungkin kita merasa bahwa semua pahlawan kita adalah palsu.
+							<p class="right-align">- Elliot</p>
+						</blockquote>
+					</h5>
 				</div>
 			</div>
 		</div>
-		<div class="parallax"><img src="background2.jpg" alt="Unsplashed background img 2"></div>
+		<div class="parallax"><img src="img/kegiatan/IMG_2740.JPG" alt="Unsplashed background img 2"></div>
 	</div>
 
 	<div class="container">
@@ -228,26 +272,66 @@
 			<div class="row">
 				<div class="col s12 center">
 					<h3><i class="mdi-content-send brown-text"></i></h3>
-					<h4>Contact Us</h4>
+					<h4 class="light">LOKASI SEKOLAH KAMI</h4>
 					<p class="left-align light">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam scelerisque id nunc nec volutpat. Etiam pellentesque tristique arcu, non consequat magna fermentum ac. Cras ut ultricies eros. Maecenas eros justo, ullamcorper a sapien id, viverra ultrices eros. Morbi sem neque, posuere et pretium eget, bibendum sollicitudin lacus. Aliquam eleifend sollicitudin diam, eu mattis nisl maximus sed. Nulla imperdiet semper molestie. Morbi massa odio, condimentum sed ipsum ac, gravida ultrices erat. Nullam eget dignissim mauris, non tristique erat. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae;</p>
 				</div>
 			</div>
+			<div class="row">
+				<div class="col s6 left-align">
 
-		</div>
-	</div>
+				</div>
+				<div class="col s6 ">
 
-
-	<div class="parallax-container valign-wrapper">
-		<div class="section no-pad-bot">
-			<div class="container">
-				<div class="row center">
-					<h5 class="header col s12 light">A modern responsive front-end framework based on Material Design</h5>
 				</div>
 			</div>
+
 		</div>
-		<div class="parallax"><img src="background3.jpg" alt="Unsplashed background img 3"></div>
 	</div>
 
+	
+	<div class="container">
+		<div class="row">
+			<div class="row center">
+			<h3 class="light">KONTAK KAMI</h3>
+			</div>
+			<form class="col s6">
+				<div class="row">
+					<div class="input-field col s12">
+						<input placeholder="Placeholder" id="first_name" type="text" class="validate">
+						<label for="first_name">Nama anda</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="input-field col s12">
+						<input id="email" type="email" class="validate">
+						<label for="email">Email</label>
+					</div>
+				</div>
+				<div class="row">
+					<div class="input-field col s12">
+						<input id="email" type="email" class="validate">
+						<label for="email">Pesan anda</label>
+					</div>
+				</div>
+				<a class="waves-effect waves-light btn">kirim</a>
+			</form>
+		
+		
+		
+			<div class="col s6 m6">
+		 <div class="collection">
+			 <ul >
+        <li class="collection-item"><div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div></li>
+        <li class="collection-item"><div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div></li>
+        <li class="collection-item"><div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div></li>
+        <li class="collection-item"><div>Alvin<a href="#!" class="secondary-content"><i class="material-icons">send</i></a></div></li>
+				 </ul>
+      </div>
+		</div>
+			</div>
+	</div>
+	<br><Br>
+	<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.849924451783!2d106.69284131406859!3d-6.283450663252082!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69fae9ed426cb3%3A0xd633605be781a330!2sSMK+Fadilah!5e0!3m2!1sid!2sid!4v1486714521273" style="min-width: 100%; min-height: 340px;" frameborder="0" style="border:0" allowfullscreen></iframe>
 	<footer class="page-footer teal">
 		<div class="container">
 			<div class="row">
@@ -282,7 +366,7 @@
 
 
 	<!--  Scripts-->
-	<script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+
 	<script src="js/materialize.js"></script>
 	<script src="js/init.js"></script>
 
