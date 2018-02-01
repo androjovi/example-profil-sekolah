@@ -16,9 +16,16 @@
   }
 })
 	   $(document).ready(function(){
+		   if ($(window).width() < 700){
+			   var t = 500
+			   console.log("Mobile");
+		   }else{
+			   var t = 600
+			   console.log("Res");
+		   }
       $('.slider').slider({
 		  indicators : false,
-		  height : '600',
+		  height : t,
 		  interval : 6000,
 	  });
     });

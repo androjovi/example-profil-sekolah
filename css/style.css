@@ -5,7 +5,7 @@
  *
  * Made By MaterializeCSS.com
  */
-@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One|Armata|Bangers|Electrolize|Fredoka+One|Geo|Hammersmith+One|Jura|NTR|Walter+Turncoat');
+@import url('https://fonts.googleapis.com/css?family=Alfa+Slab+One|Armata|Bangers|Electrolize|Fredoka+One|Geo|Hammersmith+One|Jura|NTR|Walter+Turncoat|Bree+Serif	');
 nav ul a,
 nav .brand-logo {
   color: white;
@@ -15,6 +15,11 @@ nav .brand-logo {
   -o-transition:ease all 0.5s;
 	
 }
+.brand{
+		width: 50px;
+		height: 50px;
+	margin-top:5px;
+	}
 .dark-nav{
 	
 	color : black;
@@ -52,10 +57,20 @@ p {
   .parallax-container .section {
     position: absolute;
     top: 40%;
+	  
   }
   #index-banner .section {
     top: 10%;
   }
+	.brand-text{
+		font-size: 20px;
+		
+	}
+	.brand{
+		width: 40px;
+		height: 40px;
+		margin-top:8px;
+	}
 }
 
 @media only screen and (max-width : 600px) {
